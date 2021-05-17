@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title> SEARCH PAGE </title>
+		
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		
+		<link rel = "stylesheet" href = "styles/search_page_styles.css">	<!--search page styles -->
+		<link rel = "stylesheet" href = "styles/main_styles.css">	<!--navigation bar and footer-->
+		<script src = "javascripts/search_page_script.js"> </script>	<!--search page JS file-->
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">    <!-- fonts -->
+		
+		<script>
+		
+			var data= {"properties": [
+				{
+					"id":"prop1",
+					"type":"House",
+					"bedrooms":3,
+					"price":650000,
+					"tenure":"Freehold",
+					"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
+					"location":"Petts Wood Road, Petts Wood, Orpington",
+					"picture":"images/prop1pic1small.jpg",
+					"url":"properties/prop1.html",
+					"added": {
+						"month":"March",
+						"day":12,
+						"year":2018
+					}
+				},
+				{
+					"id":"prop2",
+					"type":"Flat",
+					"bedrooms":2,
+					"price":299995,
+					"tenure":"Freehold",
+					"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+					"location":"Crofton Road Orpington BR6",
+					"picture":"images/prop2pic1small.jpg",
+					"url":"properties/prop2.html",
+					"added": {
+						"month":"September",
+						"day":14,
+						"year":2018
+					}
+				},
+				{
+					"id":"prop3",
+					"type":"Flat",
+					"bedrooms":2,
+					"price":680000,
+					"tenure":"Freehold",
+					"description":"This property has been extended by the original owners where they have created and extra downstair bedroom,sunroom and bathroom.The property also offers parking for vehicles along the attached garage.To the rear is a fantastic garden laid importantly to lawn with mature bushes and scrubs.The property is of outstanding natural beauty.The kitchen consists of a range of wooden base, wall and drawer with edged worktop over and connecting a breakfast bar, and two double glazed windows for the nature effect.",
+					"location":"Crofton Road Orpington BR6",
+					"picture":"images/prop3pic1.jpg",
+					"url":"properties/prop3.html",
+					"added": {
+						"month":"September",
+						"day":14,
+						"year":2018
+					}
+				},
+				{
+					"id":"prop4",
+					"type":"House",
+					"bedrooms":3,
+					"price":565000,
+					"tenure":"Freehold",
+					"description":"A beautiful entrance to the home where it has a space to leave the coats and boots. The property also dinning room plus it also has a hall with an electric fire consiting an open fire and a chimney behind and a large picture window to enjoy the views of the garden.The property contains a bath room with modern fittings including a heater and basin.The tiles of the bath room are of mosaicstyle with contrasting gray border.",
+					"location":"Crofton Road Orpington BR6",
+					"picture":"images/prop4pic1.jpg",
+					"url":"properties/prop4.html",
+					"added": {
+						"month":"September",
+						"day":14,
+						"year":2018
+					}
+				},
+				{
+					"id":"prop5",
+					"type":"Flat",
+					"bedrooms":4,
+					"price":555000,
+					"tenure":"Freehold",
+					"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+					"location":"Crofton Road Orpington BR6",
+					"picture":"images/prop5pic1.jpg",
+					"url":"properties/prop5.html",
+					"added": {
+						"month":"September",
+						"day":14,
+						"year":2018
+					}
+				},
+				{
+					"id":"prop6",
+					"type":"Flat",
+					"bedrooms":4,
+					"price":650000,
+					"tenure":"Freehold",
+					"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+					"location":"Crofton Road Orpington BR6",
+					"picture":"images/prop6pic1.jpg",
+					"url":"properties/prop6.html",
+					"added": {
+						"month":"September",
+						"day":14,
+						"year":2018
+					}
+				},
+				{
+					"id":"prop7",
+					"type":"House",
+					"bedrooms":2,
+					"price":480000,
+					"tenure":"Freehold",
+					"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+					"location":"Crofton Road Orpington BR6",
+					"picture":"images/prop7pic1.jpg",
+					"url":"properties/prop7.html",
+					"added": {
+						"month":"September",
+						"day":14,
+						"year":2018
+					}
+				}
+			]}
+		
+		</script>
+		
+	</head>
+	
+	<body>
+	
+		<section class = "navigation_bar">	<!--NAVIGATION BAR OF THE PAGE -->
+			<nav>
+				<ul class = "navigation_list">
+					<li><a class = "active" href="search_page.html">SEARCH PAGE</a></li>
+					<li><a href="properties/favourite_page.html">FAVOURITES PAGE</a></li>
+				</ul>
+			</nav>
+		</section>
+		
+		<header><img src = "images/home.png" alt="logo_img">YOUR CHOICE</header>	<!--HEADER OF THE SEARCH PAGE-->
+	
+		<section class = "search_form_box" >	<!--SEARCH FORM-->
+			<section class = "search_form" >
+				<h2> FIND A PROPERTY </h2>
+				<form>
+					<label>TYPE : </label><br>	<!--FOR THE TYPE OF THE PROPERTY-->
+					<label for="TYPE1">House</label>
+					<input type="radio" name="type" id="TYPE1" class = "TYPE" value = "House">
+					<label for="TYPE2">Flat</label>
+					<input type="radio" name="type" id="TYPE2" class = "TYPE" value = "Flat">
+					<label for="TYPE3">Any</label>
+					<input type="radio" name="type" id="TYPE3" class = "TYPE" value = "Any" checked>
+					
+					<br>
+					
+					<label for= "PRICE">PRICE : </label><br>		<!--FOR THE PRICE OF THE PROPERTY-->
+					<input type="text" id="PRICE" name="price">
+					<div id="slider-range"></div>
+					
+					<br>
+					
+					<label>BEDROOMS : </label><br><br>	<!--FOR THE NO-OF BEDROOMS OF THE PROPERTY-->
+					<label for= "BEDROOMS_MIN">Min Bedrooms</label><br>
+					<select name="bedrooms" id="BEDROOMS_MIN" class = "BEDROOMS">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+					<br><br>
+					<label for= "BEDROOMS_MAX">Max Bedrooms</label><br>
+					<select name="bedrooms" id="BEDROOMS_MAX" class = "BEDROOMS">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+					
+					<br><br>
+					
+					<label for="DATE_ADDED">DATE ADDED : </label><br>	<!--FOR THE DATE ADDED OF THE PROPERTY-->
+					<input type="text" id="DATE_ADDED" name="added" placeholder = "select a date to search from"><br>
+					
+					<button id="search" type="button" >SEARCH PROPERTIES</button> <!--BUTTON TO START SEARCH AFTER FORM IS FILLED-->
+					
+					<br>
+										
+				</form>
+			</section>
+			
+		</section>
+		
+		<div id="placeholder"></div>	<!--RESULT OF THE SEARCH-->
+		
+		<footer>	<!--FOOTER OF THE PAGE-->
+			<a href="search_page.html">SEARCH PAGE</a>
+			<a href="properties/favourite_page.html">FAVOURITES PAGE</a>
+		</footer>
+	</body>
+</html>
