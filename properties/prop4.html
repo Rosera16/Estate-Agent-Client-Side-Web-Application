@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PROPERTY</title>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="jquery-ui-1.9.0.custom.min.js"></script>		
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">	
+		
+		<link rel="stylesheet" href="../styles/main_styles.css"> <!--header and footer styles-->
+		<link rel="stylesheet" href="../styles/property_page_styles.css"> <!--properties styles-->
+		<link rel="stylesheet" href="dist/modal.min.css"> <!--minified version of the Modal Lightbox plugin-->
+		
+		<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="dist/bod-modal.js?v=1.1"></script> <!--minified version of the Modal Lightbox plugin-->
+		
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		
+		<script src="../javascripts/prop_and_fav_script.js"> </script> <!--script for property page-->
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">    <!-- fonts -->
+		
+	</head>	
+	<body>
+		<section class = "navigation_bar">	<!--NAVIGATION BAR OF THE PAGE -->
+			<nav>
+				<ul class = "navigation_list">
+					<li><a href = "../search_page.html"> SEARCH PAGE </a></li>
+					<li><a href = "favourite_page.html"> FAVOURITES PAGE </a></li>
+				</ul>
+			</nav>
+		</section>
+		
+		<div class = "body_contents">	<!--CONTENT OF THE PAGE-->
+		  
+			<section id = "property_page">
+				<div class = "property_display">
+					<header><h1>HOUSE FOR SALE</h1></header>	<!--PAGE HEADER-->
+					
+					<section id = "description" >	<!--PROPERTIES DESCRIPTION SECTION-->
+						<p>Property type -- House</p>
+						<p>Price -- $565000</p>
+						<p>Location -- Petts Wood Road, Petta Wood, Orpington</p>
+					</section>
+					
+					<section id = "property_images">	<!--PROPERTIES IMAGE SECTION-->
+						<img src = "../images/prop4pic1.jpg"  alt = "prop_main_img">
+						
+						<div class="bod-modal" data-interval="0">	<!--THUMBNAIL OF THE PROPERTY-->
+							<div><a href = "../images/prop4pic2.jpg" title = "prop4pic2"><img src = "../images/prop4pic2.jpg" alt = "prop_thumbnail" class = "thumbnail_img"></a>
+							<a href = "../images/prop4pic3.jpg" title = "prop4pic3"><img src = "../images/prop4pic3.jpg" alt = "prop_thumbnail" class = "thumbnail_img"></a></div>
+							
+							<div><a href = "../images/prop4pic4.jpg" title = "prop4pic4"><img src = "../images/prop4pic4.jpg" alt = "prop_thumbnail" class = "thumbnail_img"></a>
+							<a href = "../images/prop4pic5.jpg" title = "prop4pic5"><img src = "../images/prop4pic5.jpg" alt = "prop_thumbnail" class = "thumbnail_img"></a></div>
+							
+							<div><a href = "../images/prop4pic6.jpg" title = "prop4pic6"><img src = "../images/prop4pic6.jpg" alt = "prop_thumbnail" class = "thumbnail_img"></a>
+							<a href = "../images/prop4pic7.jpg" title = "prop4pic7"><img src = "../images/prop4pic7.jpg" alt = "prop_thumbnail" class = "thumbnail_img"></a></div>
+						</div>
+					</section>
+					
+					<section id = "tab">	<!--PROPERTIES TAB SECTION-->
+						<ul>
+							<li><a href = "#tab-1">Long Description</a></li>
+							<li><a href = "#tab-2">Floor Plan</a></li>
+							<li><a href = "#tab-3">Map</a></li>
+						</ul>
+					
+						<section id = "tab-1">
+							<p>A beautiful entrance to the home where it has a space to leave the coats and boots. The property also dinning room plus it also 
+							has a hall with an electric fire consiting an open fire and a chimney behind and a large picture window to enjoy the views 
+							of the garden.The property contains a bath room with modern fittings including a heater and basin.The tiles of the bath room are of 
+							mosaicstyle with contrasting gray border.</p>
+						</section>
+						
+						<section id = "tab-2">
+							<img src = "../images/prop1Plan.jpg" alt = "prop_plan" style = "width: 100%; height: auto">
+						</section>
+						
+						<section id = "tab-3">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.6747195152293!2d0.08008871509018725!3d51.39065612705433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ab82cc8f3cb1%3A0xc746da03b0c6c716!2sPetts%20Wood%20Rd%2C%20Petts%20Wood%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2slk!4v1609392950491!5m2!1sen!2slk"></iframe>
+						</section>
+					</section>
+				</div>
+			</section>
+			
+			<aside id = "side_favourite_list">	<!--FAVORITE LIST -->
+				<header><h1>FAVOURITE LIST</h1></header>
+				
+				<div id = "all_contents">
+					<section id = "property" class = "property reset ui-helper-clearfix">
+						<div class = "ui-widget-content ui-corner-tr" id = "property_contents">
+							<h5>PROPERTY</h5>
+							<img src = "../images/prop4pic1.jpg" alt = "property image" width = "96" height = "72">
+							<a href ="link/to/favorite/script/when/we/have/js/off" title = "add favorite image" class = "ui-icon ui-icon-favorite">add favorite property</a>
+						</div>
+					</section>	
+					<div id = "favorite" class = "ui-widget-content">
+						<h4 class = "ui-widget-header"><span class = "ui-icon ui-icon-favorite">favorite</span>FAVORITE</h4>
+						<p id = "message">*Drag the property to favorites if you like*</p>
+					</div>
+					
+				</div>
+				<p id = "prop4">				
+					<button id="fav_button" type="button" >ADD TO FAVORITE</button>	<!--BUTTON TO ADD TO FAVORITE LIST-->
+				</p>
+			</aside>
+	
+		</div>
+		
+		<footer>	<!--FOOTER OF THE PAGE-->
+			<a href = "../search_page.html">SEARCH PAGE</a>
+			<a href = "favourite_page.html">FAVOURITES PAGE</a>
+		</footer>
+		
+	</body>
+</html>
