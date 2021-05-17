@@ -1,0 +1,63 @@
+/*remove white space around the page of all the pages*/
+body{ 
+	margin: 0;
+}
+
+/*styles for the navigation list of all the pages*/
+.navigation_list{	
+	font-size:1.2em;
+	font-family: 'Cormorant Garamond', serif;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 50px;
+	overflow:hidden;
+	background-color: #333;
+}
+
+.navigation_list li{
+	float: left;
+}
+
+.navigation_list a{
+	display:block;
+	color:#e36b7e;
+	text-align: center;
+	padding:14px;
+	text-decoration: none;
+}
+
+.navigation_list a:hover {
+	background-color :gray;
+	color:white;
+}
+
+.active {
+	text-decoration: none;
+	background-color: #61484d;
+}
+
+/*styles for the footer of all the pages*/
+footer{
+	padding-top:50px;
+	padding-bottom:20px;
+	background-color : rgba(166, 101, 108,0.5);
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: bold;
+}
+
+footer a{
+	margin-bottom:20px;
+	color : black;
+	font-size:1.1em;	
+	text-decoration: none;	
+	display:flex;
+	justify-content: center;
+}
+
+footer a:hover {
+	font-size:1.2em;
+	color:white;
+}
